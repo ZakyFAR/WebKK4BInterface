@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CRUD Produk</title>
+    <title>CRUD Buah</title>
     <style type="text/css">
       * {
         font-family: "Trebuchet MS";
@@ -46,8 +46,8 @@
     </style>
   </head>
   <body>
-    <center><h1>Data Produk</h1><center>
-    <center><a href="tambah_produk.php">+ &nbsp; Tambah Produk</a><center>
+    <center><h1>Data Buah</h1><center>
+    <center><a href="tambah_produk.php">+ &nbsp; Tambah Buah</a><center>
     <br/>
     <table>
       <thead>
@@ -85,7 +85,7 @@
           <td><?php echo substr($row['deskripsi'], 0, 20); ?>...</td>
           <td>Rp <?php echo number_format($row['harga_beli'],0,',','.'); ?></td>
           <td>Rp <?php echo number_format ($row['harga_jual'],0,',','.'); ?></td>
-          <td style="text-align: center;"><img src="../gambar<?php echo $row['gambar_produk']; ?>" style="width: 120px;"></td>
+          <td style="text-align: center;"><img src="public_html<?php echo $row['gambar_produk']; ?>" style="width: 120px;"></td>
           <td>
               <a href="edit_produk.php?id=<?php echo $row['id']; ?>">Edit</a> |
               <a href="proses_hapus.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')">Hapus</a>

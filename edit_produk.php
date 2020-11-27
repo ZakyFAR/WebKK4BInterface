@@ -77,14 +77,14 @@ include 'koneksi.php';
   </head>
   <body>
       <center>
-        <h1>Edit Produk <?php echo $data['nama_produk']; ?></h1>
+        <h1>Edit Buah <?php echo $data['nama_produk']; ?></h1>
       <center>
       <form method="POST" action="proses_edit.php" enctype="multipart/form-data" >
       <section class="base">
         <!-- menampung nilai id produk yang akan di edit -->
         <input name="id" value="<?php echo $data['id']; ?>"  hidden />
         <div>
-          <label>Nama Produk</label>
+          <label>Nama Buah</label>
           <input type="text" name="nama_produk" value="<?php echo $data['nama_produk']; ?>" autofocus="" required="" />
         </div>
         <div>
@@ -100,8 +100,8 @@ include 'koneksi.php';
          <input type="text" name="harga_jual" required="" value="<?php echo $data['harga_jual']; ?>"/>
         </div>
         <div>
-          <label>Gambar Produk</label>
-          <img src="../gambar<?php echo $data['gambar_produk']; ?>" style="width: 120px;float: left;margin-bottom: 5px;">
+          <label>Gambar Buah</label>
+          <img src="public_html<?php echo $data['gambar_produk']; ?>" style="width: 120px;float: left;margin-bottom: 5px;">
           <input type="file" name="gambar_produk" />
           <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah gambar produk</i>
         </div>

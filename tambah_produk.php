@@ -52,12 +52,12 @@
   </head>
   <body>
       <center>
-        <h1>Tambah Produk</h1>
+        <h1>Tambah Buah</h1>
       <center>
       <form method="POST" action="proses_tambah.php" enctype="multipart/form-data" >
       <section class="base">
         <div>
-          <label>Nama Produk</label>
+          <label>Nama Buah</label>
           <input type="text" name="nama_produk" autofocus="" required="" />
         </div>
         <div>
@@ -73,7 +73,7 @@
          <input type="text" name="harga_jual" required="" />
         </div>
         <div>
-          <label>Gambar Produk</label>
+          <label>Gambar Buah</label>
          <input type="file" name="gambar_produk" required="" />
         </div>
         <div>
